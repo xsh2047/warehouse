@@ -1,5 +1,7 @@
 package models;
 
+import play.data.validation.Constraints;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,9 @@ public class Product {
                 "Paperclips description 5"));
     }
 
+    @Constraints.Required
     public String ean;
+    @Constraints.Required
     public String name;
     public String description;
 
@@ -61,7 +65,7 @@ public class Product {
     }
 
     public static boolean remove(Product product){
-        return product.remove(product);
+        return products.remove(product);
     }
 
     public void save(){

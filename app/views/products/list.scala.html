@@ -3,6 +3,19 @@
 @main("Products catalogue"){
     <h2>All products</h2>
 
+    <script >
+        function del(url){
+            $.ajax({
+                url: url,
+                type: 'DELETE',
+                success: function(results){
+                    //Refresh the page
+                    location.reload();
+                }
+            });
+        }
+    </script>
+
     <table class="table table-striped">
         <thead>
             <tr>
@@ -23,8 +36,20 @@
                     <td>
                         <a href="@routes.Products.details(product.ean)">@product.description</a>
                     </td>
+                    <td>
+                        <a href="@routes.Products.details(product.ean)">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </a>
+                        <a onclick="del('@routes.Products.delete(product.ean)')">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+                    </td>
                 </tr>
             }
         </tbody>
     </table>
+
+    <a href="@routes.Products.newProduct()" class="btn">
+        <i class="glyphicon glyphicon-plus"></i>
+    </a>
 }

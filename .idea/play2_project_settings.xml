@@ -6,14 +6,32 @@
         <entry key="play-java">
           <value>
             <ProjectSettingsEntry>
-              <option name="playDistrPath" value="$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar" />
+              <option name="playDistrPath" value="$PROJECT_DIR$/../../../../activator-dist-1.3.9/repository/com.typesafe.play/play_2.11/2.5.0/jars/play_2.11.jar" />
             </ProjectSettingsEntry>
           </value>
         </entry>
-        <entry key="root">
+        <entry key="playRoutesImports">
           <value>
             <ProjectSettingsEntry>
-              <option name="confDir" value="J:\Work\project-play\play-java\app" />
+              <option name="routesImports">
+                <list>
+                  <option value="controllers.Assets.Asset" />
+                  <option value="play.libs.F" />
+                </list>
+              </option>
+            </ProjectSettingsEntry>
+          </value>
+        </entry>
+        <entry key="sourceDirectory">
+          <value>
+            <ProjectSettingsEntry>
+              <option name="confDir" value="C:\Users\zabie\Documents\Projects\Code\Java\warehouse\app" />
+            </ProjectSettingsEntry>
+          </value>
+        </entry>
+        <entry key="twirlTemplatesImports">
+          <value>
+            <ProjectSettingsEntry>
               <option name="templateImports">
                 <list>
                   <option value="models._" />
@@ -32,13 +50,13 @@
                   <option value="play.mvc.Http.Context.Implicit._" />
                 </list>
               </option>
-              <option name="routesImports">
-                <list>
-                  <option value="controllers.Assets.Asset" />
-                  <option value="play.libs.F" />
-                </list>
-              </option>
-              <option name="uri" value="J:\Work\project-play\play-java" />
+            </ProjectSettingsEntry>
+          </value>
+        </entry>
+        <entry key="uri">
+          <value>
+            <ProjectSettingsEntry>
+              <option name="uri" value="/C:/Users/zabie/Documents/Projects/Code/Java/warehouse" />
             </ProjectSettingsEntry>
           </value>
         </entry>
